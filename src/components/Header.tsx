@@ -130,11 +130,11 @@ export function Header({ activeSection }: HeaderProps) {
       </div>
 
       {/* Main Navigation Row matching uploaded nav link style */}
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:gap-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-3 sm:gap-4 sm:px-6 lg:gap-6 lg:px-8">
         {/* Brand Wordmark */}
         <a
           href="#home"
-          className="text-lg font-bold tracking-tight text-[#1E2621] whitespace-nowrap shrink-0 transition-colors hover:text-[#3C455F] sm:text-xl"
+          className="text-base font-bold tracking-tight text-[#1E2621] whitespace-nowrap shrink-0 transition-colors hover:text-[#3C455F] sm:text-lg lg:text-xl"
         >
           {PRACTICE_CONFIG.name}
         </a>
@@ -142,7 +142,7 @@ export function Header({ activeSection }: HeaderProps) {
         {/* Navigation Links (Home, About Us, Focus Areas, Services, Reviews, Contact Us) */}
         <nav
           aria-label="Primary navigation"
-          className="hidden items-center gap-6 md:flex lg:gap-7"
+          className="hidden items-center gap-3.5 md:flex lg:gap-6"
         >
           {NAV_ITEMS.map((item) => {
             const isActive = activeSection === item.id;
@@ -151,7 +151,7 @@ export function Header({ activeSection }: HeaderProps) {
                 key={item.id}
                 href={`#${item.id}`}
                 aria-current={isActive ? 'page' : undefined}
-                className={`relative py-2 text-[15px] font-medium whitespace-nowrap shrink-0 transition-colors ${
+                className={`relative py-2 text-[13px] font-medium whitespace-nowrap shrink-0 transition-colors lg:text-[15px] ${
                   isActive
                     ? 'text-[#3C455F]'
                     : 'text-[#374151] hover:text-[#3C455F]'
@@ -169,8 +169,8 @@ export function Header({ activeSection }: HeaderProps) {
           })}
         </nav>
 
-        {/* Mobile Icons + Shadowed Book Appointment Button + Hamburger */}
-        <div className="flex items-center gap-2 shrink-0">
+        {/* Mobile Icons + 3D Book Appointment Button + Hamburger */}
+        <div className="flex items-center gap-1.5 shrink-0 sm:gap-2">
           <div className="hidden sm:flex md:hidden">
             <HeaderIconStrip sizeClass="h-5 w-5" />
           </div>

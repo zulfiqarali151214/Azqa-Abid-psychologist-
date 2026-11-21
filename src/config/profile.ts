@@ -114,7 +114,7 @@ export const SERVICES = [
     description:
       'A brief introductory conversation to share what brings you to therapy, ask questions about the process, and see if we are a good fit.',
     ctaLabel: 'Book Appointment',
-    ctaHref: PRACTICE_CONFIG.bookingUrl,
+    ctaHref: PRACTICE_CONFIG.whatsappPrefilledUrl,
     external: true,
   },
   {
@@ -124,7 +124,7 @@ export const SERVICES = [
     description:
       'Confidential one-on-one sessions from the privacy of your own space, structured around practical steps you can apply between meetings.',
     ctaLabel: 'Schedule Session',
-    ctaHref: PRACTICE_CONFIG.bookingUrl,
+    ctaHref: PRACTICE_CONFIG.whatsappPrefilledUrl,
     external: true,
   },
   {

@@ -58,18 +58,17 @@ export function Hero() {
 
   return (
     <section id="home" className="border-b border-[#E2E6DE] bg-[#FAF8F4]">
-      {/* Full-Bleed Blurred Background Hero matching reference image */}
+      {/* Full-Bleed Blurred Doctor Background Hero matching reference image */}
       <div className="relative overflow-hidden bg-[#2D3546]">
         <img
-          src={PRACTICE_CONFIG.aboutSpaceImageSrc}
+          src={`${import.meta.env.BASE_URL}assets/aistudio/image_2d542ac4.png`}
           alt=""
           aria-hidden="true"
-          referrerPolicy="no-referrer"
-          className="absolute inset-0 h-full w-full scale-105 object-cover object-center blur-[4px]"
+          className="absolute inset-0 h-full w-full scale-105 object-cover object-top blur-[3px]"
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-[#232A3B]/80 via-[#2E374C]/65 to-[#2E374C]/45"
+          className="absolute inset-0 bg-gradient-to-r from-[#232A3B]/85 via-[#2E374C]/70 to-[#2E374C]/45"
         />
 
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">

@@ -191,25 +191,25 @@ export function FaqAndContact() {
       {/* Contact & Hours Section */}
       <section
         id="contact"
-        className="border-b border-[#E2E6DE] bg-[#FAF8F4] py-16 sm:py-20"
+        className="border-b border-[#DCE5F2] bg-[#F7FAFF] py-16 sm:py-20"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12">
             {/* Hours & Direct Contact Column */}
             <div className="lg:col-span-5">
-              <p className="text-sm font-semibold text-[#2F5241]">Contact</p>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#1E2621] sm:text-4xl">
+              <p className="text-sm font-semibold text-[#1665F5]">Contact</p>
+              <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#1A2338] sm:text-4xl">
                 Reach out or book a time
               </h2>
-              <p className="mt-3 text-base leading-relaxed text-[#4F5B53]">
+              <p className="mt-3 text-base leading-relaxed text-[#475569]">
                 Whether you are ready to book an appointment or prefer to ask a
                 question on WhatsApp first, you are welcome to get in touch.
               </p>
 
               {/* Working Hours Table */}
-              <div className="mt-8 rounded-2xl border border-[#E2E6DE] bg-white p-6">
-                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E2E6DE] pb-4">
-                  <h3 className="text-xl font-bold text-[#1E2621]">
+              <div className="mt-8 rounded-2xl border border-[#D3E0F4] bg-[#EEF4FF] p-6 shadow-[0_6px_18px_rgba(22,101,245,0.05)]">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#D3E0F4] pb-4">
+                  <h3 className="text-xl font-bold text-[#1A2338]">
                     Working Hours
                   </h3>
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold">
@@ -233,23 +233,23 @@ export function FaqAndContact() {
                   <caption className="sr-only">
                     Consultation working hours in Asia/Karachi timezone
                   </caption>
-                  <tbody className="divide-y divide-[#E2E6DE]">
+                  <tbody className="divide-y divide-[#D3E0F4]">
                     {WORKING_HOURS_ROWS.map((row) => (
                       <tr key={row.day}>
                         <th
                           scope="row"
-                          className="py-3 font-medium text-[#1E2621]"
+                          className="py-3 font-medium text-[#1A2338]"
                         >
                           {row.day}
                         </th>
-                        <td className="py-3 text-right text-[#4F5B53] tabular-nums">
+                        <td className="py-3 text-right text-[#475569] tabular-nums">
                           {row.hours}
                         </td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
-                <p className="mt-3 text-xs text-[#4F5B53] tabular-nums">
+                <p className="mt-3 text-xs text-[#475569] tabular-nums">
                   Current Lahore time (PKT): {hoursStatus.karachiTimeText} ·{' '}
                   {hoursStatus.detailLabel}
                 </p>
@@ -309,11 +309,11 @@ export function FaqAndContact() {
 
             {/* Consultation Inquiry Form Column */}
             <div className="lg:col-span-7">
-              <div className="rounded-2xl border border-[#E2E6DE] bg-white p-6 sm:p-8">
-                <h3 className="text-2xl font-bold text-[#1E2621]">
+              <div className="rounded-2xl border border-[#D3E0F4] bg-white p-6 shadow-[0_8px_24px_rgba(22,101,245,0.06)] sm:p-8">
+                <h3 className="text-2xl font-bold text-[#1A2338]">
                   Send an inquiry
                 </h3>
-                <p className="mt-2 text-sm text-[#4F5B53]">
+                <p className="mt-2 text-sm text-[#475569]">
                   Share brief contact details and your preferred timing. Please
                   avoid sharing deeply sensitive medical details in web forms.
                 </p>
